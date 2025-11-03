@@ -1,4 +1,4 @@
-# SNX VPN Wrapper
+# :lock: SNX VPN Wrapper
 Python tray app wrapper for `snx` VPN process.
 
 ## :gear: Setup
@@ -34,15 +34,21 @@ Categories=Settings;Network
 Terminal=false
 ```
 
-4) If you want it to start automatically during startup, create a link to `~/.config/autostart/`, replacing **user** by your Linux user
+4) (**optional**) If you want it to start automatically during startup, create a link to `~/.config/autostart/`, replacing **user** by your Linux user
 ```
 ln -s /home/user/.local/share/applications/snx_wrapper.desktop /home/user/.config/autostart/snx_wrapper.desktop
 ```
 
-5) To force desktop apps database to refresh, run
+To force desktop apps database to refresh, run
 ```
 update-desktop-database ~/.local/share/applications/
 ```
+
+You are now ready to rock! :sunglasses:
+
+Just seach for **snx** and it will appear on the applications menu
+
+![preview](res/snx_desktop.png)
 
 ### Dependencies
 
@@ -53,6 +59,14 @@ From your repository home folder, install Python dependencies
 ```
 pip install -r requirements.txt
 ```
+
+## :page_with_curl: Usage
+
+When you run the app, it will stay running on background. To connect or disconnect `snx`, go to the app tray icon and select either `Connect` or `Disconnect` options.
+
+For connection, there will be a prompt window asking for your password.
+
+**Note:** Remember, for this to work, you must have `snx` process fully functional and configurations ready in `~/.snxrc` file!
 
 ## :hammer_and_wrench: Contributing
 
