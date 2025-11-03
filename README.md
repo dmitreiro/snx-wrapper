@@ -54,6 +54,11 @@ From your repository home folder, install Python dependencies
 pip install -r requirements.txt
 ```
 
+## :hammer_and_wrench: Contributing
+
+Contributions are welcome and greatly appreciated!
+Whether it’s fixing a bug, improving documentation, or adding new features — all help is valuable.
+
 ## :balance_scale: License
 
 This project is licensed under the MIT License, which allows anyone to use, modify, and distribute this software for free, as long as the original copyright and license notice are included. See the [LICENSE](LICENSE) file for more details.
