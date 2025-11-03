@@ -6,7 +6,7 @@ gi.require_version('Gtk', '3.0')
 gi.require_version('Notify', '0.7')
 from gi.repository import AyatanaAppIndicator3 as AppIndicator3, Gtk, GLib, Notify
 
-APP_ID = "vpn_indicator"
+APP_ID = "SNX"
 last_status = None
 
 # --- VPN control functions ---
