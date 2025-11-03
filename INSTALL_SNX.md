@@ -12,13 +12,18 @@ sudo sh cshell_install.sh
 
 :warning: **Warning**: before you proceed, make sure your Linux OS uses `systemd` as a service manager
 
-3) Give execution permission to `checkpoint_service.sh` and run it as sudo to setup the deamon process
+3) Copy `checkpoint.service` file from `src` folder to `~/.config/systemd/user`
+
 ```
-sudo chmod +x checkpoint_service.sh
-sudo ./checkpoint_service.sh
+cp src/checkpoint.service ~/.config/systemd/user
 ```
 
-To check service status run
+and create a `systemd` service
+```
+systemctl --user enable checkpoint.service
+```
+
+to check service status run
 ```
 systemctl --user status checkpoint.service
 ```

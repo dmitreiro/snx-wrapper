@@ -1,0 +1,12 @@
+    [Unit]
+    Description=checkpoint client
+
+    [Service]
+    Type=simple
+    ExecStart=java -jar /usr/bin/cshell/CShell.jar /dev/shm/cshell.fifo
+    KillSignal=SIGTERM
+    Restart=on-failure
+    RestartSec=5
+
+    [Install]
+    WantedBy=default.target
